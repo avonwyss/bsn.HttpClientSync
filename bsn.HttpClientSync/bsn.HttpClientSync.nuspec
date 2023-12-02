@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+	<metadata>
+		<id>bsn.HttpClientSync</id>
+		<version>1.0.0</version>
+		<authors>avonwyss</authors>
+		<owners>avonwyss</owners>
+		<license type="expression">MIT</license>
+		<projectUrl>https://github.com/avonwyss/bsn.HttpClientSync</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>.NET Library providing sync (blocking) calls on top of legacy HttpClient (before .NET 6.0). This library should be able to avoid soft deadlocks and reduce threadpool starvation compared to calling .Result on tasks returned from async methods. For more context, please visit https://github.com/dotnet/runtime/issues/32125</description>
+		<copyright>Copyright 2023 Arsène von Wyss</copyright>
+		<tags>bsn HttpClient</tags>
+		<dependencies>
+			<dependency id="NLog" version="4.0.0" />
+			<dependency id="System.Threading.Tasks.Extensions" version="4.0.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="bin\$Configuration$\bsn.HttpClientSync.*" target="lib" />
+	</files>
+</package>
